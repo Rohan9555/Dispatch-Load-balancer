@@ -4,13 +4,13 @@
 This is a Spring Boot application that assigns delivery orders to vehicles based on priority, vehicle capacity, and travel distance. It uses the Haversine formula to calculate distance between vehicle locations and delivery locations.
 
 ## Approach
-* **Order Processing:** Accept delivery orders with location, weight, and priority.
-* **Vehicle Management:** Accept vehicle details with capacity and current location.
-* **Priority Allocation:** Process high-priority orders first.
-* **Capacity Checks:** Assign orders only if vehicle capacity is available.
-* **Distance Optimization:** Select the nearest suitable vehicle using Haversine distance.
-* **Dispatch Plan:** Generate a dispatch plan with assigned orders, total load, and total distance.
-* **Unassigned Handling:** Return unassigned orders when they cannot be allocated.
+* Accept delivery orders with location, weight, and priority
+* Accept vehicle details with capacity and current location
+* Process high-priority orders first
+* Assign orders only if vehicle capacity is available
+* Select the nearest suitable vehicle using Haversine distance
+* Generate a dispatch plan with assigned orders, total load, and total distance
+* Return unassigned orders when they cannot be allocated
 
 ## APIs
 * `POST /api/dispatch/orders` – Add delivery orders
